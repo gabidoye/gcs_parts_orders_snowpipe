@@ -44,21 +44,12 @@ snowflake-parts-orders-snowpipe-event-driven/
 ├── docs/                            # Documentation folder
 │   ├── technical_implementation.md  # Detailed technical steps and SQL scripts
 │   ├── architecture_diagram.png     # System architecture diagram
-│   └── resources.md                 # Additional resources or links (optional)
+│   ├── artifacts.png                # screenshots of expected outputs
 ├── sql/                             # SQL scripts folder
-│   ├── create_database.sql          # Script for database and table creation
-│   ├── create_stage.sql             # Script for stage and storage integration
-│   ├── create_pipe.sql              # Script for creating the Snowpipe
-│   ├── manage_pipe.sql              # Script for pausing/resuming/dropping the pipe
-│   └── queries.sql                  # Example queries (e.g., to check pipe status)
-├── cicd/                            # CI/CD-related configurations
-│   ├── pipeline.yml                 # Example CI/CD pipeline YAML file (e.g., GitHub Actions)
-│   └── deploy_scripts.sh            # Shell script to deploy the pipeline
+│   ├── parts_orders.sql             # Script for database and table creation
+│   └── schedule_task.sql            # SQl script for setting up task and schedulling
 ├── data/                            # Example data folder (for testing only)
 │   ├── sample_orders.csv            # Sample CSV file for testing the pipeline
-├── scripts/                         # Custom automation scripts
-│   ├── setup_pubsub.sh              # Shell script to configure Pub/Sub in GCP
-│   └── clean_resources.sh           # Script to clean up GCP and Snowflake resources
 ├── .gitignore                       # Ignore unnecessary files in version control
 └── LICENSE                          # Licensing information (if applicable)
 ```
